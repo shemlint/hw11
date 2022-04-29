@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Tank Painting Estimate {% endblock %}
+
+{% block body %}
+<h1> VTM Estimator </h1>
+<hr>
+{% if not name %}
+Name is : {{name}}
+{% else %}
+Name is not Defined
+{% endif %}
+<h3>Total cost estimate</h3>
+<h4>Radius : {{radius}} Height : {{height}} is : {{cost_estimate}}</h4>
+<form action="./generate_estimate" method="post">
+    <p><input type="text" name="radius" placeholder="Radius" /></p>
+    <p><input type="text" name="height" placeholder="Height" /></p>
+    <p><input type="submit" value="submit" /></p>
+</form>
+{% endblock %}

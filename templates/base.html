@@ -1,0 +1,44 @@
+    <div class="header">   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ pageTitle }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+
+    
+        <h2>Vertical Tank Maintenance</h2>
+       
+        <div class="button1">
+            <form action="http://127.0.0.1:5000/">
+                <input type="submit" value="Home" />
+            </form>
+        </div>
+        <div class="button2">
+            <form action="http://127.0.0.1:5000/about">
+                <input type="submit" value="About" />
+            </form>
+        </div>
+        <div class="button3">
+            <form action="http://127.0.0.1:5000/estimate">
+                <input type="submit" value="Estimate" />
+            </form>
+        </div>
+    </div>
+        <hr>
+        <br>
+ 
+
+        {% block body %}
+        {% endblock %}
+    </div>
+    <div class="footer"
+        <footer>
+            <p>&copy VTM 2020</p>
+        </footer>
+    </div>
+</body>
+</html>

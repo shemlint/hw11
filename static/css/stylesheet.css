@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+    margin-bottom: 2.cm;
+}
+
+.photo {
+    height:200px
+    }
+    img {
+    width: auto; 
+     max-height: 100%; 
+}
+
+.button1, .button2, .button3{
+display: inline-block;
+}
+
+.header{
+    background-color: rgb(175, 174, 174) 
+}
+
+h1{
+    font-weight: bold;
+    font-size: large;
+}
+
+h2{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.footer{
+    background-color: rgb(175, 174, 174) 
+}
+
+output {
+    display: inline;
+  }
+
